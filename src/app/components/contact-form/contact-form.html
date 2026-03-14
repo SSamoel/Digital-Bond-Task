@@ -1,1 +1,48 @@
-<p>contact-form works!</p>
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-header">
+      <span class="sub-title">Contact</span>
+      <h2 class="main-title">Get In<span>Touch</span></h2>
+    </div>
+    <div class="contact-form">
+      <form (submit)="$event.preventDefault(); onSubmit()" class="form">
+        <div class="input-group">
+          <input [(ngModel)]="name" (blur)="nameTouched.set(true)" type="text" placeholder="Your Name" name="name"
+            [class.error]="isNameInvalid()">
+          @if (isNameInvalid()){
+          <span class="error-text">Please enter a valid name</span>
+          }
+        </div>
+        <div class="input-group">
+          <input [(ngModel)]="email" (blur)="emailTouched.set(true)" type="email" placeholder="Your Email" name="email"
+            [class.error]="isEmailInvalid()">
+          @if (isEmailInvalid()){
+          <span class="error-text">Please enter a valid email</span>
+          }
+        </div>
+        <div class="input-group">
+          <textarea [(ngModel)]="message" (blur)="messageTouched.set(true)" placeholder="Your Message" name="message"
+            [class.error]="isMessageInvalid()"></textarea>
+          @if(isMessageInvalid()){
+          <span class="error-text">Please enter a valid message (min 10 chars)</span>
+          }
+        </div>
+        <button type="submit" [disabled]="isFormInvalid()" class="submit-btn">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+@if(showModal()){
+<div class="modal-overlay" (click)="closeModal()">
+  <div class="modal-card" (click)="$event.stopPropagation()">
+    <div class="success-icon">
+      <i class="bi bi-check"></i>
+    </div>
+    <h3>Message Sent!</h3>
+    <p><span>Thank you.</span> Our team at Digital Bond will contact you soon.</p>
+    <button class="close-btn" (click)="closeModal()">Great!</button>
+  </div>
+</div>
+}
