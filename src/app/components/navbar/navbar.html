@@ -1,1 +1,21 @@
-<p>navbar works!</p>
+<nav [ngClass]="{'navbar-scrolled' : isScrolled()}" class="navbar">
+  <div class="container">
+    <div class="navbar-content">
+      <div class="logo">
+        <img src="logo.webp" alt="Digital Bond Logo">
+      </div>
+      <button class="menu-toggle" (click)="toggleMenu()" [class.open]="isMenuOpen()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" [class.active]="isMenuOpen()">
+        <li><a href="#hero" (click)="isMenuOpen.set(false)">Home</a></li>
+        <li><a href="#services" (click)="isMenuOpen.set(false)">Services</a></li>
+        <li><a href="#testimonials" (click)="isMenuOpen.set(false)">Testimonials</a></li>
+        <li><a href="#contact" (click)="isMenuOpen.set(false)">Contact Us</a></li>
+      </ul>
+      <div class="menu-overlay" [class.active]="isMenuOpen()" (click)="toggleMenu()"></div>
+    </div>
+  </div>
+</nav>
