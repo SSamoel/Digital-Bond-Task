@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ContactForm {
 
+
   name = signal('');
   email = signal('');
   message = signal('');
@@ -52,6 +53,7 @@ export class ContactForm {
       this.messageTouched.set(false);
       console.log('Form Submitted with Signals:', formData);
     }
+
   }
 
   closeModal() {
