@@ -1,5 +1,7 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-contact-form',
@@ -8,13 +10,12 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './contact-form.css',
 })
 export class ContactForm {
-
+  router= inject(Router)
 
   name = signal('');
   email = signal('');
   message = signal('');
 
-  showModal = signal(false);
   nameTouched = signal(false);
   emailTouched = signal(false);
   messageTouched = signal(false);
@@ -39,7 +40,6 @@ export class ContactForm {
     this.emailTouched.set(true);
     this.messageTouched.set(true);
     if (!this.isFormInvalid()) {
-      this.showModal.set(true);
       const formData = {
         name: this.name(),
         email: this.email(),
@@ -52,11 +52,7 @@ export class ContactForm {
       this.emailTouched.set(false);
       this.messageTouched.set(false);
       console.log('Form Submitted with Signals:', formData);
+      this.router.navigateByUrl('/done');
     }
-
-  }
-
-  closeModal() {
-    this.showModal.set(false);
   }
 }

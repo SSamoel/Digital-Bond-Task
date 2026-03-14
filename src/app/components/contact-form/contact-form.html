@@ -1,4 +1,4 @@
-<section id="contact" class="contact">
+<section id="contact" class="contact section-spacer">
   <div class="container">
     <div class="contact-header">
       <span class="sub-title">Contact</span>
@@ -34,15 +34,6 @@
     </div>
   </div>
 </section>
-@if(showModal()){
-<div class="modal-overlay" (click)="closeModal()">
-  <div class="modal-card" (click)="$event.stopPropagation()">
-    <div class="success-icon">
-      <i class="bi bi-check"></i>
-    </div>
-    <h3>Message Sent!</h3>
-    <p><span>Thank you.</span> Our team at Digital Bond will contact you soon.</p>
-    <button class="close-btn" (click)="closeModal()">Great!</button>
-  </div>
-</div>
-}
+
+
+

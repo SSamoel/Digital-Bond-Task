@@ -1,8 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
 :root {
   --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Montserrat', sans-serif;
+  --primary-color: #AB2322;
+  --primary-hover: #8e1d1c;
+  --bg-dark: #0a0a0a;
+  --bg-light-dark: #161616;
+  --bg-card: #1a1a1a;
+  --text-main: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --border-color: rgba(255, 255, 255, 0.05);
+  --section-padding-y: 100px;
+  --container-gap: 40px;
+  --card-padding: 30px;
+  --main-transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding-y: 60px;
+    --container-gap: 20px;
+  }
 }
 
 * {
@@ -11,19 +32,25 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   overflow-x: hidden;
   width: 100%;
+  background-color: var(--bg-dark);
 }
 
 body {
   font-family: var(--primary-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #333;
+  color: var(--text-main);
   font-size: 16px;
   letter-spacing: 0.5px;
+  line-height: 1.6;
 }
 
 .container {
@@ -32,6 +59,11 @@ body {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.section-spacer {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
 }
 
 @media (min-width: 1440px) {

@@ -1,10 +1,5 @@
-section {
-  overflow-x: hidden;
-}
-
 .testimonails {
-  background-color: #121212;
-  padding: 100px 0;
+  background-color: var(--bg-dark);
 }
 
 .testimonails-header {

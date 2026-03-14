@@ -1,6 +1,5 @@
 .services {
-  background-color: #121212;
-  padding: 100px 0;
+  background-color: var(--bg-light-dark);
 }
 
 .services-header {

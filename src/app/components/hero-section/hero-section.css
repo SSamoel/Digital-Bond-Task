@@ -1,11 +1,10 @@
 .hero {
-  padding-top: 100px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #121212;
+  background-color: var(--bg-dark);
   color: white;
   position: relative;
   overflow: hidden;
@@ -38,7 +37,7 @@
 }
 
 .hero-badge {
-  color: #ab2322;
+  color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -50,13 +49,13 @@
 .hero-text h1 {
   font-size: clamp(32px, 5vw, 64px);
   font-weight: 800;
-  color: #ffffff;
+  color: var(--text-main);
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .hero-text span {
-  color: #ab2322;
+  color: var(--primary-color);
 }
 
 .hero-text p {
@@ -73,8 +72,8 @@
 }
 
 .btn-main {
-  background-color: #ab2322;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-main);
   padding: 15px 35px;
   border-radius: 50px;
   text-decoration: none;
@@ -85,14 +84,14 @@
 }
 
 .btn-main:hover {
-  background-color: #910c0c;
+  background-color: var(--primary-hover);
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(255, 77, 77, 0.3);
 }
 
 .btn-outline {
   border: 2px solid white;
-  color: white;
+  color: var(--text-main);
   padding: 13px 35px;
   border-radius: 50px;
   text-decoration: none;
@@ -103,7 +102,7 @@
 
 .btn-outline:hover {
   background-color: white;
-  color: #121212;
+  color: var(--bg-light-dark);
   transform: translateY(-3px);
 }
 
