@@ -1,1 +1,35 @@
-<p>testimonials works!</p>
+<section id="testimonails" class="testimonails">
+  <div class="container">
+    <div class="testimonails-header">
+      <span class="sub-title">Testimonials</span>
+      <h2 class="main-title">What Our <span>Clients Say</span></h2>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-nav">
+        <button (click)="scroll(scrollContainer, -1)" aria-label="Previous">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button (click)="scroll(scrollContainer, 1)" aria-label="Next">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="carousel-container" #scrollContainer>
+      <div class="testimonails-list">
+        @for (data of clientDta; track $index) {
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="bi bi-quote"></i></div>
+          <div class="client-info">
+            <img [src]="data.image" [alt]="data.name" class="client-img" loading="lazy">
+            <div class="client-meta">
+              <h4>{{ data.name }}</h4>
+              <p>{{ data.role }}</p>
+            </div>
+          </div>
+          <p class="feedback-text">"{{ data.feedback }}"</p>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
