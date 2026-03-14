@@ -8,7 +8,7 @@
 }
 
 .testimonails-header .sub-title {
-  color: #ab2322;
+  color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
@@ -20,12 +20,12 @@
 .testimonails-header .main-title {
   font-size: clamp(24px, 5vw, 48px);
   font-weight: 800;
-  color: #ffffff;
+  color: var(--text-main);
   line-height: 1.2;
 }
 
 .testimonails-header span {
-  color: #ab2322;
+  color: var(--primary-color);
   margin-left: 10px;
 }
 
@@ -41,9 +41,9 @@
 }
 
 .carousel-nav button {
-  background: #1a1a1a;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -51,12 +51,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: var(--main-transition);
 }
 
 .carousel-nav button:hover {
-  background: #ab2322;
-  border-color: #ab2322;
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
   transform: translateY(-3px);
 }
 
@@ -79,12 +79,12 @@
 }
 
 .testimonial-card {
-  background-color: #1a1a1a;
+  background-color: var(--bg-card);
   flex: 0 0 100%;
   scroll-snap-align: start;
   border-radius: 20px;
   padding: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
   position: relative;
   min-height: 300px;
   display: flex;
@@ -93,7 +93,7 @@
 }
 
 .testimonial-card:hover {
-  border-color: #ab0202;
+  border-color: var(--primary-hover);
   transform: translateY(-10px);
   box-shadow: 0 10px 30px rgba(171, 35, 34, 0.2);
 }
@@ -115,19 +115,19 @@
 .client-meta h4 {
   margin: 0;
   font-size: 18px;
-  color: #fff;
+  color: var(--text-main);
 }
 
 .client-meta p {
   margin: 0;
   padding-top: 10px;
   font-size: 14px;
-  color: #ab2322;
+  color: var(--primary-color);
 }
 
 .feedback-text {
   font-style: italic;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-muted);
   line-height: 1.7;
 }
 

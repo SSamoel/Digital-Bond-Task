@@ -8,7 +8,7 @@
 }
 
 .contact-header .sub-title {
-  color: #ab2322;
+  color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
@@ -20,22 +20,22 @@
 .contact-header .main-title {
   font-size: clamp(24px, 5vw, 48px);
   font-weight: 800;
-  color: #ffffff;
+  color: var(--text-main);
   line-height: 1.2;
 }
 
 .contact-header span {
-  color: #ab2322;
+  color: var(--primary-color);
   margin-left: 10px;
 }
 
 .contact-form {
-  background: #1a1a1a;
+  background: var(--bg-card);
   max-width: 700px;
   margin: 0 auto;
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
 }
 
 .form {
@@ -55,12 +55,12 @@
 .input-group textarea {
   width: 100%;
   padding: 15px 20px;
-  background: #121212;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-light-dark);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
-  color: #fff;
+  color: var(--text-main);
   font-size: 16px;
-  transition: all 0.3s ease;
+  transition: var(--main-transition);
 }
 
 .input-group textarea {
@@ -70,37 +70,37 @@
 
 .input-group input:focus,
 .input-group textarea:focus {
-  border-color: #ab2322;
+  border-color: var(--primary-hover);
   box-shadow: 0 0 10px rgba(171, 35, 34, 0.2);
   outline: none;
 }
 
 .input-group input.error,
 .input-group textarea.error {
-  border-color: #ff4d4d;
+  border-color: var(--primary-hover);
 }
 
 .error-text {
-  color: #ff4d4d;
+  color: var(--primary-color);
   font-size: 12px;
   margin-left: 5px;
 }
 
 .submit-btn {
-  background: #ab2322;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-main);
   padding: 18px;
   border: none;
   border-radius: 12px;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: var(--main-transition);
   margin-top: 10px;
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #8e1d1c;
+  background: var(--primary-color);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(171, 35, 34, 0.3);
 }

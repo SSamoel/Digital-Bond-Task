@@ -1,16 +1,14 @@
 <section id="services" class="services section-spacer">
   <div class="container">
-    <div class="services-wrapper">
-      <div class="services-header">
-        <span class="sub-title">What We Do</span>
-        <h2 class="main-title">Our<span>Services</span></h2>
-      </div>
-      <div class="services-list">
-        @for (service of services; track service.title) {
-        <app-service-card [title]="service.title" [description]="service.description" [icon]="service.icon">
-        </app-service-card>
-        }
-      </div>
+    <div class="services-header">
+      <span class="sub-title">What We Do</span>
+      <h2 class="main-title">Our<span>Services</span></h2>
+    </div>
+    <div class="services-list">
+      @for (service of services; track service.title) {
+      <app-service-card [title]="service.title" [description]="service.description" [icon]="service.icon">
+      </app-service-card>
+      }
     </div>
   </div>
 </section>
