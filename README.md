@@ -12,9 +12,9 @@ A high-performance, modern landing page built with Angular 20, leveraging the la
 
 ## 🛠️ Project Setup & Configuration
 The project was initialized with strict typing and server-side capabilities:
-
-     ```bash
-   ng new digital-bond-task --ssr --strict ```
+<pre>
+           ng new digital-bond-task --ssr --strict
+</pre>
    
 
 
@@ -112,18 +112,22 @@ How it was applied:
   Installation
   1.Clone the repository:
   
-     ```bash
-  git clone https://github.com/SSamoel/Digital-Bond-Task.git ```
+  <pre>
+  git clone https://github.com/SSamoel/Digital-Bond-Task.git
+  </pre>
 
   2.Install NPM packages:
      
-        ```bash
-  npm install ```
+  <pre>
+    npm install 
+  </pre>
+  
   
   3.Start the application:
 
-        ```bash
-  ng serve ```
+  <pre>
+  ng serve
+  </pre>
 
   4.Open your browser: Navigate to http://localhost:4200/
 
