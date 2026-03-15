@@ -13,9 +13,9 @@ A high-performance, modern landing page built with Angular 20, leveraging the la
 ## 🛠️ Project Setup & Configuration
 The project was initialized with strict typing and server-side capabilities:
 
-   ```bash
-   ng new digital-bond-task --ssr --strict
-   ```
+     ```bash
+   ng new digital-bond-task --ssr --strict ```
+   
 
 
  Why these flags?
@@ -112,24 +112,23 @@ How it was applied:
   Installation
   1.Clone the repository:
   
-    ```bash
-    git clone https://github.com/SSamoel/Digital-Bond-Task.git
-    ```
+     ```bash
+  git clone https://github.com/SSamoel/Digital-Bond-Task.git ```
+
   2.Install NPM packages:
      
-    ```bash
-    npm install
-    ```
+        ```bash
+  npm install ```
+  
   3.Start the application:
 
-    ```bash
-    ng serve
-    ```
+        ```bash
+  ng serve ```
 
   4.Open your browser: Navigate to http://localhost:4200/
 
  ## 📊 Lighthouse Performance
-  ![Lighthouse Report](./screenshots/lighthouse-report.png)
+  ![Lighthouse Report](./screenshots/lighthouse-report.jpeg)
 
 
   Live Demo: https://digital-bond-task.vercel.app/.
