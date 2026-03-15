@@ -13,10 +13,10 @@ A high-performance, modern landing page built with Angular 20, leveraging the la
 ## 🛠️ Project Setup & Configuration
 The project was initialized with strict typing and server-side capabilities:
 
-    ```bash
-    ng new digital-bond-task --ssr --strict
-    
-    ```
+   ```bash
+   ng new digital-bond-task --ssr --strict
+   ```
+
 
  Why these flags?
   1) --ssr: Automatically integrates Angular Universal, setting up the Node.js Express server (server.ts) and server-side entry points.
@@ -64,40 +64,44 @@ How it was applied:
 
 . Advanced Contact Form:
 
-    - Real-time Validation: Powered by Signals.
+   - Real-time Validation: Powered by Signals.
 
-    - Name: Minimum 3 characters.
+   - Name: Minimum 3 characters.
 
-    - Email: Validated via Regex.
+   - Email: Validated via Regex.
 
-    - Message: Minimum 10 characters.
+   - Message: Minimum 10 characters.
 
-    - Logic: Form submission is disabled until all signals satisfy validation criteria.
+   - Logic: Form submission is disabled until all signals satisfy validation criteria.
 
-    - Success Flow: Displays a Pop-up Modal and updates URL to /done upon successful submission.
+   - Success Flow: Displays a Pop-up Modal and updates URL to /done upon successful submission.
+
+<pre>
 
   ## 📂 Folders Structure
   The project follows a clean and modular directory structure as requested:
-        src/
-      └── app/
-          ├── components/         # Reusable UI components (Hero, Services, etc.) 
-          │   ├── navbar/
-          │   ├── hero-section/
-          │   ├── services-list/
-          │   ├── testimonials/
-          │   ├── contact-form/
-          │   └── footer/
-          ├── core/
-          |   |── models/         # Interfaces and Type definitions 
-          |        ├── client-data/
-          |        ├── contact-message/
-          |        ├── service-item/
-          ├── pages/           
-          │   └── homepage/
-          |   ├── sucuess/
-          ├── shared/
-          |   ├── service-card/
-          └── app.config.ts       # Zoneless & Hydration providers
+                src/
+              └── app/
+                  ├── components/         # Reusable UI components (Hero, Services, etc.) 
+                  │   ├── navbar/
+                  │   ├── hero-section/
+                  │   ├── services-list/
+                  │   ├── testimonials/
+                  │   ├── contact-form/
+                  │   └── footer/
+                  ├── core/
+                  |   |── models/         # Interfaces and Type definitions 
+                  |        ├── client-data/
+                  |        ├── contact-message/
+                  |        ├── service-item/
+                  ├── pages/           
+                  │   └── homepage/
+                  |   ├── sucuess/
+                  ├── shared/
+                  |   ├── service-card/
+                  └── app.config.ts       # Zoneless & Hydration providers
+
+</pre>
   ## 🚀 Getting Started
   To get a local copy up and running, follow these simple steps:
 
@@ -109,17 +113,24 @@ How it was applied:
   1.Clone the repository:
   
     ```bash
-        git clone https://github.com/SSamoel/Digital-Bond-Task.git
+    git clone https://github.com/SSamoel/Digital-Bond-Task.git
+    ```
   2.Install NPM packages:
      
-         ```bash
-          npm install
+    ```bash
+    npm install
+    ```
   3.Start the application:
 
-             ```bash
-             ng serve
+    ```bash
+    ng serve
+    ```
 
   4.Open your browser: Navigate to http://localhost:4200/
+
+ ## 📊 Lighthouse Performance
+  ![Lighthouse Report](./screenshots/lighthouse-report.png)
+
 
   Live Demo: https://digital-bond-task.vercel.app/.
   Developed by: Sara Samoel | https://www.linkedin.com/in/sara-samoel-0abb7a233
